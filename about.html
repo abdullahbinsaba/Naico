@@ -3,139 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Naico And Company</title>
+    <title>About - Naico And Company</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923366630630" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/923366630630" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Chat with us</span>
+        </a>
+    </div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo-container">
-              <h1 class="logo-text">Naico And Company</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <span class="logo-text">NAICO & CO</span>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- About Hero -->
-    <section class="page-hero">
+    <!-- About Header -->
+    <section class="page-header">
         <div class="container">
-            <h1 class="page-title">About Naico And Company</h1>
-            <p class="page-subtitle">Your trusted welding hardware supplier</p>
+            <h1 class="page-title">About Naico & Company</h1>
+            <p class="page-subtitle">Your Trusted Welding Partner Since 2009</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section">
+    <!-- About Content -->
+    <section class="about-content">
         <div class="container">
-            <div class="about-content animate-slide-up">
-                <h2 class="section-title">Our Story</h2>
-                <p>Naico And Company was founded with a vision to provide high-quality welding hardware and equipment to professionals and DIY enthusiasts alike. Over the years, we've built a reputation for reliability, quality, and excellent customer service.</p>
-                <p>What started as a small local business has grown into a trusted supplier of welding materials, serving customers across the region. Our commitment to quality and customer satisfaction remains at the core of everything we do.</p>
-            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Legacy of Excellence</h2>
+                    <p>Founded in 2009, Naico & Company has been at the forefront of providing premium welding solutions and industrial hardware to professionals across Pakistan. Our commitment to quality and customer satisfaction has made us the preferred choice for welding professionals.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To provide high-quality welding equipment and accessories that empower professionals to achieve exceptional results while ensuring safety and efficiency in their work.</p>
 
-            <div class="mission-vision animate-fade-in">
-                <div class="mission">
-                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
-                    <p>To provide top-quality welding hardware and equipment at competitive prices, backed by exceptional customer service and technical expertise.</p>
+                    <h3>Why Choose Naico?</h3>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 15+ Years of Industry Experience</li>
+                        <li><i class="fas fa-check"></i> 24 Premium Quality Products</li>
+                        <li><i class="fas fa-check"></i> 1000+ Satisfied Professional Clients</li>
+                        <li><i class="fas fa-check"></i> Expert Technical Support</li>
+                        <li><i class="fas fa-check"></i> Competitive Pricing</li>
+                        <li><i class="fas fa-check"></i> Fast Delivery Across Pakistan</li>
+                    </ul>
                 </div>
-                <div class="vision">
-                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
-                    <p>To become the leading supplier of welding solutions in our region, recognized for our product quality, reliability, and customer-focused approach.</p>
-                </div>
-            </div>
-
-            <div class="values animate-slide-up">
-                <h2 class="section-title">Our Values</h2>
-                <div class="values-grid">
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <h3>Quality</h3>
-                        <p>We source only the highest quality products from trusted manufacturers.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="experience-hours">0</div>
+                        <div class="stat-label">Hours of Excellence</div>
                     </div>
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Integrity</h3>
-                        <p>We conduct our business with honesty and transparency.</p>
+                    <div class="stat-card">
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Premium Products</div>
                     </div>
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Customer Focus</h3>
-                        <p>Our customers are at the heart of everything we do.</p>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Happy Clients</div>
                     </div>
-                    <div class="value-item">
-                        <div class="value-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3>Expertise</h3>
-                        <p>We share our knowledge to help customers make informed decisions.</p>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section animate-fade-in">
+    <!-- Experience Section -->
+    <section class="experience-section">
         <div class="container">
-            <h2 class="section-title">Meet Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-info">
-                        <h3>Muhammad Saba</h3>
-                        <p class="position">Owner</p>
-                        <p class="bio">As the founder and owner of Naico and Company, Muhammad Saba is driven by a passion for quality, innovation, and long-term customer relationships in the welding hardware industry.</p>
-                        <div class="member-contact">
-                            <a href="tel:+923343324026"><i class="fas fa-phone"></i> +92 334 3324026</a>
-                        </div>
+            <h2 class="section-title">Our Journey in Numbers</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <div class="exp-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Since 2009</h3>
+                        <p>Serving professionals with quality welding solutions</p>
                     </div>
                 </div>
-                 <div class="team-member">
-                    <div class="member-info">
-                        <h3>Naik Muhammad</h3>
-                        <p class="position">Manager</p>
-                        <p class="bio">Naik Muhammad brings years of welding hardware industry experience, guiding our team with expertise and a strong focus on customer satisfaction.</p>
-                        <div class="member-contact">
-                            <a href="tel:+923113564027"><i class="fas fa-phone"></i> +92 311 3564027</a>
-                        </div>
+                <div class="experience-item">
+                    <div class="exp-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="exp-content">
+                        <h3 id="business-hours">0</h3>
+                        <p>Business hours served to our valued customers</p>
                     </div>
                 </div>
-                <!-- Add more team members as needed -->
-                  <div class="team-member">
-                    <div class="member-info">
-                        <h3>Abdullah bin Saba</h3>
-                        <p class="position">Assistent Manager</p>
-                        <p class="bio">With years of experience in the welding hardware industry, Abdullah leads our team with expertise and dedication to customer satisfaction.</p>
-                        <div class="member-contact">
-                            <a href="tel:+923366630630"><i class="fas fa-phone"></i> +92 336 6630630</a>
-                            <a href="mailto:sabaabdullah416@gmail.com"><i class="fas fa-envelope"></i> sabaabdullah416@gmail.com</a>
-                        </div>
+                <div class="experience-item">
+                    <div class="exp-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="exp-content">
+                        <h3>1000+</h3>
+                        <p>Professional welders trust our products</p>
                     </div>
                 </div>
-                  <!-- Add more team members as needed -->
+                <div class="experience-item">
+                    <div class="exp-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="exp-content">
+                        <h3>24 Products</h3>
+                        <p>Comprehensive range of welding solutions</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -143,40 +141,49 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Naico And Company</h3>
-                    <p>Your trusted partner for quality welding hardware and equipment.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Naico & Company</h3>
+                    <p>Your trusted partner for premium welding solutions since 2009. Quality and reliability you can count on.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/wwwNaicoCompany/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="https://wa.me/923366630630"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Saturday</li>
+                        <li>10:00 AM - 7:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <h3>Contact Info</h3>
                     <ul>
-                        
+                        <li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
                         <li><i class="fas fa-phone"></i> +92 336 6630630</li>
                         <li><i class="fas fa-envelope"></i> sabaabdullah416@gmail.com</li>
+                        <li><i class="fas fa-user"></i> Abdullah bin Saba</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Naico And Company. All Rights Reserved.</p>
+                <p>&copy; 2009-<span id="current-year">2024</span> Naico & Company. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
 </body>
 </html>

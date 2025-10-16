@@ -1,0 +1,254 @@
+/* Responsive Design */
+
+/* Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-content {
+        gap: 3rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .all-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--shadow-lg);
+        padding: 2rem 0;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+
+    /* Products */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .all-products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About Page */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Typography */
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    /* Buttons */
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Stats */
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* Forms */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    /* Map */
+    .map-placeholder {
+        height: 300px;
+    }
+    
+    .map-placeholder i {
+        font-size: 3rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 20px;
+    }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 320px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .whatsapp-float,
+    .hero-buttons,
+    .btn {
+        display: none !important;
+    }
+    
+    .hero-section {
+        padding: 50px 0 !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .element {
+        animation: none !important;
+    }
+}

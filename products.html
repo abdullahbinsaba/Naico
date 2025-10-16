@@ -3,147 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Naico And Company</title>
+    <title>Products - Naico And Company</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923366630630" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/923366630630" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Chat with us</span>
+        </a>
+    </div>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo-container">
-                <h1 class="logo-text">Naico And Company</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <span class="logo-text">NAICO & CO</span>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Products Hero -->
-    <section class="page-hero">
+    <!-- Products Header -->
+    <section class="page-header">
         <div class="container">
             <h1 class="page-title">Our Products</h1>
-            <p class="page-subtitle">Quality welding hardware for all your needs</p>
+            <p class="page-subtitle">24 Premium Welding Products - Trusted Quality Since 2009</p>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products-section">
+    <!-- Products Grid -->
+    <section class="products-grid-section">
         <div class="container">
-            <div class="products-categories">
-                <!-- Welding Rods -->
-                <div class="product-category animate-slide-up" id="welding-rods">
-                    <div class="category-image">
-                        <img src="images/welding-rods.jpg" alt="Welding Rods">
+            <div class="all-products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" id="colour-spray">
+                    <div class="product-image">
+                        <img src="./images/products/color-spray.jpg" alt="Colour Spray" onerror="this.style.display='none'">
                     </div>
-                    <div class="category-info">
-                        <h2>Welding Rods</h2>
-                        <p>We offer a wide range of high-quality welding rods suitable for various welding applications. Our rods provide strong, durable welds with excellent arc stability.</p>
-                        <ul class="product-specs">
-                            <li><i class="fas fa-check"></i> Various sizes available</li>
-                            <li><i class="fas fa-check"></i> High tensile strength</li>
-                            <li><i class="fas fa-check"></i> Smooth arc performance</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Gas Cutters -->
-                <div class="product-category animate-slide-up" id="gas-cutter">
-                    <div class="category-info">
-                        <h2>Gas Cutters</h2>
-                        <p>Professional gas cutting equipment designed for precision and durability. Our gas cutters are perfect for industrial and workshop use.</p>
-                        <ul class="product-specs">
-                            <li><i class="fas fa-check"></i> Single and double pipe options</li>
-                            <li><i class="fas fa-check"></i> Precision cutting</li>
-                            <li><i class="fas fa-check"></i> Durable construction</li>
-                        </ul>
-                    </div>
-                    <div class="category-image">
-                        <img src="images/gas-cutter.jpg" alt="Gas Cutters">
+                    <div class="product-content">
+                        <h3 class="product-title">Colour Spray</h3>
+                        <p class="product-description">High-quality color sprays for metal finishing and protection with durable results</p>
+                        <div class="product-features">
+                            <span class="feature">Quick Drying</span>
+                            <span class="feature">Weather Resistant</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Welding Machines -->
-                <div class="product-category animate-slide-up" id="welding-machine">
-                    <div class="category-image">
-                        <img src="images/welding-machine.jpg" alt="Welding Machines">
+                <!-- Product 2 -->
+                <div class="product-card" id="welding-cables">
+                    <div class="product-image">
+                        <img src="images/products/welding-cables.jpg" alt="Welding Cables" onerror="this.style.display='none'">
                     </div>
-                    <div class="category-info">
-                        <h2>Welding Machines</h2>
-                        <p>Reliable welding machines for all your welding needs. From small DIY projects to large industrial applications, we have the right machine for you.</p>
-                        <ul class="product-specs">
-                            <li><i class="fas fa-check"></i> Various power options</li>
-                            <li><i class="fas fa-check"></i> Portable models available</li>
-                            <li><i class="fas fa-check"></i> Energy efficient</li>
-                        </ul>
+                    <div class="product-content">
+                        <h3 class="product-title">Welding Cables</h3>
+                        <p class="product-description">High-quality flexible welding cables for optimal performance and durability</p>
+                        <div class="product-features">
+                            <span class="feature">Flexible</span>
+                            <span class="feature">Heat Resistant</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Other Products List -->
-                <div class="other-products animate-fade-in">
-                    <h2>Other Products We Offer</h2>
-                    <div class="other-products-grid">
-                        <div class="other-product-item">
-                            <i class="fas fa-spray-can"></i>
-                            <h3>Color Spray (Mubah Company)</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <h3>Oxygen Gauge</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-compact-disc"></i>
-                            <h3>Cutting/Grinding/Buffing Discs</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-ruler"></i>
-                            <h3>Measuring Tapes</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-bolt"></i>
-                            <h3>Welding Cables</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-pipe"></i>
-                            <h3>Gas Cutter User Pipes</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-mitten"></i>
-                            <h3>Welding Gloves</h3>
-                        </div>
-                        <div class="other-product-item">
-                            <i class="fas fa-tools"></i>
-                            <h3>Grinders</h3>
+                <!-- Product 3 -->
+                <div class="product-card" id="welding-electrode">
+                    <div class="product-image">
+                        <img src="images/products/welding-rods.jpg" alt="Welding Electrode" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Welding Electrode</h3>
+                        <p class="product-description">Various types for different welding applications with consistent performance</p>
+                        <div class="product-features">
+                            <span class="feature">High Quality</span>
+                            <span class="feature">Reliable</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" id="cutting-discs">
+                    <div class="product-image">
+                        <img src="images/products/cutting-disc.jpeg" alt="Cutting Discs" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cutting, Buffing, Grinding Discs</h3>
+                        <p class="product-description">Professional discs for cutting, buffing and grinding applications</p>
+                        <div class="product-features">
+                            <span class="feature">Precision</span>
+                            <span class="feature">Long Lasting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" id="gas-cutter">
+                    <div class="product-image">
+                        <img src="images/products/gas-cutter.jpg" alt="Gas Cutter" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Gas Cutter</h3>
+                        <p class="product-description">Professional gas cutting equipment for precise metal cutting</p>
+                        <div class="product-features">
+                            <span class="feature">Precision</span>
+                            <span class="feature">Efficient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" id="measuring-tape">
+                    <div class="product-image">
+                        <img src="images/products/measuring-tape.jpg" alt="Measuring Tape" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Measuring Tape</h3>
+                        <p class="product-description">Precision measuring tools for accurate work and professional results</p>
+                        <div class="product-features">
+                            <span class="feature">Accurate</span>
+                            <span class="feature">Durable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" id="welding-glasses">
+                    <div class="product-image">
+                        <img src="images/products/welding-glasses.jpg" alt="Welding Glasses" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Welding Glasses, Goggles</h3>
+                        <p class="product-description">Professional eye protection for welding with UV protection</p>
+                        <div class="product-features">
+                            <span class="feature">UV Protection</span>
+                            <span class="feature">Comfortable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card" id="welding-machine">
+                    <div class="product-image">
+                        <img src="images/products/welding-machine.jpg" alt="Welding Machine" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Welding Machine</h3>
+                        <p class="product-description">Professional welding machines for industrial and commercial use</p>
+                        <div class="product-features">
+                            <span class="feature">Heavy Duty</span>
+                            <span class="feature">Reliable</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 11 -->  
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/welding-gloves.jpg" alt="Safety Equipment" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Safety Equipment</h3>
+                        <p class="product-description">Professional gloves, goggles, and protective gear</p>
+                        <div class="product-features">
+                            <span class="feature">Protective</span>
+                            <span class="feature">Comfortable</span>
+                            <span class="feature">Durable</span>
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- Product 12 -->  
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/tape.jpeg" alt="Safety Equipment" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Electrical Tape</h3>
+                        <p class="product-description"> Electrical Tape used in almost every feild</p>
+                        <div class="product-features">
+                            <span class="feature">Reliable</span>
+                            <span class="feature">Durable</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2 class="cta-title">Need Help Choosing the Right Product?</h2>
-            <p class="cta-text">Our experts are ready to assist you in selecting the perfect welding hardware for your needs.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                <a href="https://wa.me/923366630630" class="btn btn-secondary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <div class="cta-content">
+                <h2>Need Professional Welding Equipment?</h2>
+                <p>Contact us for expert advice and competitive pricing on all our products</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    <a href="https://wa.me/923366630630" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Now
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -151,39 +228,49 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Naico And Company</h3>
-                    <p>Your trusted partner for quality welding hardware and equipment.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Naico & Company</h3>
+                    <p>Your trusted partner for premium welding solutions since 2009. Quality and reliability you can count on.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/wwwNaicoCompany/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="https://wa.me/923366630630"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
+                <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li>Monday - Saturday</li>
+                        <li>10:00 AM - 7:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
                     <h3>Contact Info</h3>
                     <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
                         <li><i class="fas fa-phone"></i> +92 336 6630630</li>
                         <li><i class="fas fa-envelope"></i> sabaabdullah416@gmail.com</li>
+                        <li><i class="fas fa-user"></i> Abdullah bin Saba</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Naico And Company. All Rights Reserved.</p>
+                <p>&copy; 2009-<span id="current-year">2024</span> Naico & Company. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
 </body>
 </html>
